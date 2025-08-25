@@ -37,7 +37,7 @@ local ground_water = {
   autoplace = resource_autoplace.resource_autoplace_settings
       {
         name = "ground-water",
-        order = "c",
+        order = "b",
         base_density = 8.2,
         base_spots_per_km2 = 1.8,
         random_probability = 1 / 48,
