@@ -113,8 +113,8 @@ local burner_water_pump_recipe = {
   ingredients =
   {
     { type = "item", name = "stone-furnace",   amount = 1 },
-    { type = "item", name = "pipe",            amount = 1 },
-    { type = "item", name = "iron-gear-wheel", amount = 1 }
+    { type = "item", name = "pipe",            amount = 4 },
+    { type = "item", name = "iron-gear-wheel", amount = 8 }
   },
   results = { { type = "item", name = "burner-water-pump", amount = 1 } },
   enabled = false,

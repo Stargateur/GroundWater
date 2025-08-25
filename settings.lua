@@ -3,7 +3,7 @@ data:extend({
     type = "int-setting",
     name = "ground-water-amount-multiplier",
     setting_type = "startup",
-    default_value = 3,
+    default_value = 5,
     minimum_value = 1,
   },
   {
