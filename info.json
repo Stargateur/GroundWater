@@ -1,8 +1,9 @@
 {
   "name": "GroundWater",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "title": "Ground Water",
   "author": "DellAquila, Stargateur",
   "description": "Adds ground water to the game",
-  "factorio_version": "1.1"
+  "factorio_version": "2.0",
+  "dependencies": ["base", "?space-age"]
 }
