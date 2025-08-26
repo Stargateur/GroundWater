@@ -94,6 +94,7 @@ burner_water_pump_entity.energy_usage = "150kW"
 burner_water_pump_entity.mining_speed = burner_water_pump_entity.mining_speed / 2
 burner_water_pump_entity.module_slots = 0
 burner_water_pump_entity.fast_replaceable_group = "pumpjack"
+burner_water_pump_entity.next_upgrade = "pumpjack"
 burner_water_pump_entity.resource_categories = { "basic-fluid" }
 for _, sheet in ipairs(burner_water_pump_entity.base_picture.sheets) do
   sheet.tint = { r = 0.5, g = 0.5, b = 0.5, a = 1 }
