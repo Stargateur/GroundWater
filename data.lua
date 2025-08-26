@@ -1,4 +1,5 @@
 local resource_autoplace = require("__core__/lualib/resource-autoplace")
+local tint = { r = 0.5, g = 0.5, b = 0.5, a = 1 }
 
 local ground_water = {
   type = "resource",
@@ -96,17 +97,31 @@ burner_water_pump_entity.module_slots = 0
 burner_water_pump_entity.fast_replaceable_group = "pumpjack"
 burner_water_pump_entity.next_upgrade = "pumpjack"
 burner_water_pump_entity.resource_categories = { "basic-fluid" }
+burner_water_pump_entity.icons = { {
+  icon = burner_water_pump_entity.icon,
+  icon_size = burner_water_pump_entity.icon_size,
+  icon_mipmaps = burner_water_pump_entity.icon_mipmaps,
+  tint = tint
+} }
+burner_water_pump_entity.icon = nil
 for _, sheet in ipairs(burner_water_pump_entity.base_picture.sheets) do
-  sheet.tint = { r = 0.5, g = 0.5, b = 0.5, a = 1 }
+  sheet.tint = tint
 end
 for _, layer in ipairs(burner_water_pump_entity.graphics_set.animation.north.layers) do
-  layer.tint = { r = 0.5, g = 0.5, b = 0.5, a = 1 }
+  layer.tint = tint
 end
 
 local burner_water_pump_item = table.deepcopy(data.raw["item"]["pumpjack"])
 burner_water_pump_item.name = "burner-water-pump"
 burner_water_pump_item.order = "b[fluids]-b[burner-water-pump]"
 burner_water_pump_item.place_result = "burner-water-pump"
+burner_water_pump_item.icons = { {
+  icon = burner_water_pump_item.icon,
+  icon_size = burner_water_pump_item.icon_size,
+  icon_mipmaps = burner_water_pump_item.icon_mipmaps,
+  tint = tint
+} }
+burner_water_pump_item.icon = nil
 
 local burner_water_pump_recipe = {
   type = "recipe",
